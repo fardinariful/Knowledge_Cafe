@@ -5,7 +5,7 @@
       "author_name": "John Doe",
       "cover_img": "https://i.ibb.co.com/ysrQVpj/2207-i101-027-F-m004-c9-machine-learning-deep-learning-isometric.jpg",
       "author_img": "https://i.ibb.co.com/1RSr1hG/cody-scott-milewski-v-Xg-V5-XUl-Tog-unsplash.jpg",
-      "reading_time": "15 min",
+      "reading_time": 15,
       "hashtag": ["#MachineLearning", "#AI", "#DataScience"],
       "posted_date": "2024-10-25"
     },
@@ -13,9 +13,9 @@
       "id": 2,
       "title": "Introduction to Web Development",
       "author_name": "Jane Smith",
-      "cover_img": "https://example.com/images/webdev_cover.jpg",
-      "author_img": "https://example.com/images/jane_smith.jpg",
-      "reading_time": "10 min",
+      "cover_img": "https://i.ibb.co.com/GdsLP0N/development-opportunity-strategy-improvement-word.jpg",
+      "author_img": "https://i.ibb.co.com/dbgfTwJ/sekatsky-O0-Ac7-NVu-Tns-unsplash.jpg",
+      "reading_time": 10,
       "hashtag": ["#WebDevelopment", "#HTML", "#CSS", "#JavaScript"],
       "posted_date": "2024-10-20"
     },
@@ -23,9 +23,9 @@
       "id": 3,
       "title": "Advanced Python Programming",
       "author_name": "Alice Johnson",
-      "cover_img": "https://example.com/images/python_cover.jpg",
+      "cover_img": "https://i.ibb.co.com/GdsLP0N/development-opportunity-strategy-improvement-word.jpg",
       "author_img": "https://example.com/images/alice_johnson.jpg",
-      "reading_time": "20 min",
+      "reading_time": 20 ,
       "hashtag": ["#Python", "#Programming", "#Coding"],
       "posted_date": "2024-10-15"
     },
@@ -33,9 +33,9 @@
       "id": 4,
       "title": "Data Visualization Techniques",
       "author_name": "Robert Brown",
-      "cover_img": "https://example.com/images/dataviz_cover.jpg",
-      "author_img": "https://example.com/images/robert_brown.jpg",
-      "reading_time": "12 min",
+      "cover_img": "https://i.ibb.co.com/GdsLP0N/development-opportunity-strategy-improvement-word.jpg",
+      "author_img": "https://example.com/images/alice_johnson.jpg",
+      "reading_time": 12,
       "hashtag": ["#DataViz", "#DataScience", "#Charts"],
       "posted_date": "2024-10-10"
     },
@@ -44,8 +44,8 @@
       "title": "Building RESTful APIs with Node.js",
       "author_name": "Michael Lee",
       "cover_img": "https://example.com/images/nodejs_cover.jpg",
-      "author_img": "https://example.com/images/michael_lee.jpg",
-      "reading_time": "18 min",
+      "author_img": "https://example.com/images/alice_johnson.jpg",
+      "reading_time": 18,
       "hashtag": ["#NodeJS", "#APIs", "#BackendDevelopment"],
       "posted_date": "2024-10-05"
     }
