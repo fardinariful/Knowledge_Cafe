@@ -19,7 +19,7 @@ const Blog = ({blog,handleclick}) => {
 
                 <div className='flex justify-center items-center text-center'>
                     <h3><span>{reading_time}</span> min read
-                    <button className='ml-2 text-xl' onClick={handleclick}>
+                    <button className='ml-2 text-xl' onClick={()=> handleclick(blog)}>
                         <FaRegBookmark></FaRegBookmark>
                         
                     </button>
@@ -45,6 +45,7 @@ const Blog = ({blog,handleclick}) => {
 
 
 Blog.propTypes={
-    blog:PropTypes.object.isRequired
+    blog:PropTypes.object.isRequired,
+    handleclick:PropTypes.func
 }
 export default Blog;
