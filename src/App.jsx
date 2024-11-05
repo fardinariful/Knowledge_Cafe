@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import Blogs from './assets/Components/Blogs/Blogs'
-import Bookmark from './assets/Components/Bookmarks/Bookmark'
 import Header from './assets/Components/Header/Header'
+import Bookmarks from './assets/Components/Bookmarks/Bookmarks';
 
 function App() {
-const [bookmark,setbookmark]=useState([]);
+const [bookmarks,setbookmark]=useState([]);
 
 const handleclick= blog =>{
-   const newbookmark=[...bookmark,blog];
+   const newbookmark=[...bookmarks,blog];
    setbookmark(newbookmark);
 }
 
@@ -17,7 +17,8 @@ const handleclick= blog =>{
       <Header></Header>
       <div className='flex container mx-auto mt-10'>
       <Blogs handleclick={handleclick}></Blogs>
-      <Bookmark bookmark={bookmark}></Bookmark>
+      <Bookmarks bookmarks={bookmarks}></Bookmarks>
+     
       </div>
 
     
