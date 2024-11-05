@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { FaRegBookmark } from "react-icons/fa";
-const Blog = ({blog,handleclick}) => {
+const Blog = ({blog,handleclick,handleclick2}) => {
    const {title,author_name,cover_img,author_img,reading_time,hashtag,posted_date}=blog;
     
    
    return (
-        <div>
+        <div className='mt-4'>
             <img className='w-full' src={cover_img} alt="" />
             <div className='flex justify-between items-center mt-3'>
                 <div className='flex gap-2 justify-center items-center'>
@@ -28,16 +28,17 @@ const Blog = ({blog,handleclick}) => {
                 
             </div>
             <div>
+             <h4 className='text-2xl font-bold'>{title}</h4>
+            </div>
+            <div>
 
                { 
                hashtag.map((hash,idx) => <span key={idx} ><a href=""># {hash}</a></span>)
                }
                 </div>
+            
             <div>
-             <h4 className='text-2xl font-bold'>{title}</h4>
-            </div>
-            <div>
-
+       <button className='text-blue-500 underline' onClick={()=>handleclick2(reading_time)}>Mark as Read</button>
             </div>
         </div>
     );
@@ -46,6 +47,7 @@ const Blog = ({blog,handleclick}) => {
 
 Blog.propTypes={
     blog:PropTypes.object.isRequired,
-    handleclick:PropTypes.func
+    handleclick:PropTypes.func,
+    handleclick2:PropTypes.func
 }
 export default Blog;
