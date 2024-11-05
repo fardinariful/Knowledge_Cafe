@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaRegBookmark } from "react-icons/fa";
 const Blog = ({blog,handleclick,handleclick2}) => {
-   const {title,author_name,cover_img,author_img,reading_time,hashtag,posted_date}=blog;
+   const {id,title,author_name,cover_img,author_img,reading_time,hashtag,posted_date}=blog;
     
    
    return (
@@ -38,7 +38,7 @@ const Blog = ({blog,handleclick,handleclick2}) => {
                 </div>
             
             <div>
-       <button className='text-blue-500 underline' onClick={()=>handleclick2(reading_time)}>Mark as Read</button>
+       <button className='text-blue-500 underline' onClick={()=>handleclick2(reading_time,id)}>Mark as Read</button>
             </div>
         </div>
     );

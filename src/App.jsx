@@ -11,11 +11,13 @@ const handleclick= blog =>{
    const newbookmark=[...bookmarks,blog];
    setbookmark(newbookmark);
 }
-const handleclick2=time=>{
-  //console.log("time adding soon",time);
-
+const handleclick2=(time,id)=>{
   const newspendtime=readingtime+time;
   setreadingtime(newspendtime);
+ 
+  const remainingbook=bookmarks.filter(bookmark => bookmark.id !== id);
+  setbookmark(remainingbook);
+
 }
 
 
